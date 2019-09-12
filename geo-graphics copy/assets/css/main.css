@@ -1,0 +1,287 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+	background-color: black;
+	color: white;
+}
+
+a {
+	color:red;
+}
+
+/*Index Homepage*/
+
+.index-intro {
+	font-size: 18px;
+	margin-bottom: 25vh;
+	padding: 10px;
+}
+
+.index-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px; 
+	border-top: 2px solid white;
+}
+
+.index-name {
+	flex: 0 0 50%;
+}
+
+.index-layer {
+	flex: 0 0 25%;
+}
+
+.index-tag {
+	flex: 0 0 25%;
+
+}
+
+/*DNA*/
+
+.checkers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.checkers-red {
+	width: 50vw;
+	height: 50vh;
+	background-color: red;
+}
+
+.checkers-blue {
+	width: 50vw;
+	height: 50vh;
+	background-color: blue;
+}
+
+.checkers-green {
+	width: 50vw;
+	height: 50vh;
+	background-color: green;
+}
+
+.checkers-yellow {
+	width: 50vw;
+	height: 50vh;
+	background-color: yellow;
+}
+
+/*DNA Type*/
+
+.dna-type {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+
+}
+
+.dna-text {
+	font-size: 30vw;
+	color: white;
+	border: 30px solid white;
+	padding: 2vw;
+	border-radius: 5vw;
+}
+
+/*URL*/
+
+.url {
+	background-color: blue;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.url h1 {
+  font-family: monospace; 
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; 
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; 
+  animation:   
+    typing 3s steps(30, end),
+    blinking-cursor .5s step-end infinite;
+  width:560px;
+  margin-left: 450px;
+  margin-top: 50px;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 550px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/*error*/
+
+.error {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: black;
+}
+
+/*404 Type*/
+
+.error-type {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+
+}
+
+.error-text {
+	font-size: 15vw;
+	color: white;
+	border: 30px solid white;
+	padding: 2vw;
+	border-radius: 5vw;
+	font-family: courier new
+}
+
+/*Cloud Pattern*/
+
+.cloud-pattern {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cloud-circle {
+	width: 25vw;
+	height: 25vw;
+	background-image: linear-gradient(blue, pink, salmon, yellow, lime, white);
+	border-radius: 50%;
+}
+
+/*screen*/
+
+.screen-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.screen {
+	width: 80vh;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 4px solid gray;
+	padding: 5vh;
+}
+
+.text {
+	color: gray;
+	border: solid gray;
+	font-size: 5vw;
+	font-family: monospace;
+}
+
+/*ice-cream*/
+.ice-cream {
+	background-image: linear-gradient(lightgreen, pink, powderblue, lightyellow);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ice-cream-text {
+	font-size: 30vh;
+	text-align: center;
+	font-family: Dosis, sans-serif;
+
+	-webkit-animation:colorchange 20s infinite alternate;
+      
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
+}
+
+
+
+
+
+
+
