@@ -7,92 +7,9 @@ body {
 
 a {
 	color:red;
-}
+} 
 
-/*Index Homepage*/
-
-.index-intro {
-	font-size: 18px;
-	margin-bottom: 25vh;
-	padding: 10px;
-}
-
-.index-row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 10px;
-	margin-bottom: 5px;
-	margin-top: 5px; 
-	border-top: 2px solid white;
-}
-
-.index-name {
-	flex: 0 0 50%;
-}
-
-.index-layer {
-	flex: 0 0 25%;
-}
-
-.index-tag {
-	flex: 0 0 25%;
-
-}
-
-/*DNA*/
-
-.checkers {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.checkers-red {
-	width: 50vw;
-	height: 50vh;
-	background-color: red;
-}
-
-.checkers-blue {
-	width: 50vw;
-	height: 50vh;
-	background-color: blue;
-}
-
-.checkers-green {
-	width: 50vw;
-	height: 50vh;
-	background-color: green;
-}
-
-.checkers-yellow {
-	width: 50vw;
-	height: 50vh;
-	background-color: yellow;
-}
-
-/*DNA Type*/
-
-.dna-type {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-	left: 0;
-	top: 0;
-
-}
-
-.dna-text {
-	font-size: 30vw;
-	color: white;
-	border: 30px solid white;
-	padding: 2vw;
-	border-radius: 5vw;
-}
-
-/*URL*/
+/*password*/
 
 .url {
 	background-color: blue;
@@ -104,7 +21,8 @@ a {
 }
 
 .url h1 {
-  font-family: monospace; 
+  font-family: monospace;
+  font-size: 3vw; 
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; 
   white-space: nowrap; /* Keeps the content on a single line */
@@ -113,10 +31,7 @@ a {
   animation:   
     typing 3s steps(30, end),
     blinking-cursor .5s step-end infinite;
-  width:560px;
-  margin-left: 450px;
-  margin-top: 50px;
-
+  width:50vw;
 }
 
 /* The typing effect */
@@ -150,57 +65,62 @@ a {
 	position: fixed;
 	left: 0;
 	top: 0;
-
 }
 
 .error-text {
-	font-size: 15vw;
-	color: white;
+	font-size: 5vw;
 	border: 30px solid white;
 	padding: 2vw;
 	border-radius: 5vw;
-	font-family: courier new
+	font-family: courier new 
+	-webkit-animation:change 20s infinite alternate;
 }
 
-/*Cloud Pattern*/
+@-webkit-keyframes change {
+	0% {
+		color: red;
+	}
+
+	100% {
+		color: white;
+	}
+}
+
+/*blur*/
 
 .cloud-pattern {
 	display: flex;
 	flex-wrap: wrap;
+	background-color: lightskyblue;
 }
 
 .cloud-circle {
 	width: 25vw;
 	height: 25vw;
-	background-image: linear-gradient(blue, pink, salmon, yellow, lime, white);
+	background-image: linear-gradient(slategray, lightslategray, lightsteelblue, silver, aliceblue, blue, ghostwhite, azure, white);
 	border-radius: 50%;
-}
+	background-position:0 0;
+	-webkit-animation:bgposition 20s infinite alternate;
+} 
 
-/*screen*/
+@keyframes bgposition {
 
-.screen-container {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+	0% {
+		background-position:0 0;
+		border-radius: 0%;
+	}
 
-.screen {
-	width: 80vh;
-	height: 80vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 4px solid gray;
-	padding: 5vh;
-}
+	50% {
+		background-position:0 8000px;
+		border-radius: 0%;
+	}
 
-.text {
-	color: gray;
-	border: solid gray;
-	font-size: 5vw;
-	font-family: monospace;
+	100% {
+		background-position:0 200px;
+		border-radius: 50%;
+	}
+
+
 }
 
 /*ice-cream*/
@@ -217,67 +137,465 @@ a {
 	font-size: 30vh;
 	text-align: center;
 	font-family: Dosis, sans-serif;
-
 	-webkit-animation:colorchange 20s infinite alternate;
-      
-    }
+ }
 
-    @-webkit-keyframes colorchange {
+ @-webkit-keyframes colorchange {
       0% {
-        
         color: blue;
       }
       
       10% {
-        
         color: #8e44ad;
       }
       
       20% {
-        
         color: #1abc9c;
       }
       
       30% {
-
         color: #d35400;
       }
       
       40% {
-        
         color: blue;
       }
       
       50% {
-        
         color: #34495e;
       }
       
       60% {
-        
         color: blue;
       }
       
       70% {
-        
         color: #2980b9;
       }
       80% {
-     
         color: #f1c40f;
       }
       
       90% {
-     
         color: #2980b9;
       }
       
       100% {
-        
         color: pink;
       }
     }
+
+
+/*save*/
+.save {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+.save-text {
+	font-size: 40vw;
+	line-height: 41vw;
+	animation-name: spin;
+	animation-duration: 2000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	transform-origin: center 50%;
+	text-align: center;
+	width: 40vw;
+	height: 40vw;
+}
+
+@keyframes spin {
+	from {
+		transform:rotate(360deg);
+	}
+
+	to {
+		transform:rotate(0deg);
+	}
+}
+
+/*torrent*/
+.progress {
+  margin:20px auto;
+  padding:0;
+  width:90%;
+  height:10vh;
+  overflow:hidden;
+  background:#e5e5e5;
+  border-radius:6px;
+  margin-top: 400px;
+}
+
+.bar {
+  position:relative;
+  float:left;
+  min-width:1%;
+  height:100%;
+  background:blue;
+}
+
+.percent {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  font-family:tahoma,arial,helvetica;
+  font-size:5vw;
+  color:white;
+}
+
+/*grey*/
+
+.checkers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkers-darkgrey {
+  width: 50vw;
+  height: 50vh;
+  background-color: darkgrey;
+}
+
+.checkers-dimgrey {
+  width: 50vw;
+  height: 50vh;
+  background-color: dimgrey;
+}
+
+.checkers-gray {
+  width: 50vw;
+  height: 50vh;
+  background-color: gray;
+}
+
+.checkers-lightgrey {
+  width: 50vw;
+  height: 50vh;
+  background-color: lightgray;
+} 
+
+/*secret questions*/
+.secret {
+  background-color: blue;
+}
+.secret-text {
+  flex: 0 0 66.66%;
+  padding: 10px;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 24px;
+  margin-left: 500px;
+  margin-top: 250px;
+}
+
+.secret-text h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  font-family: DM Serif Text, serif; 
+}
+
+.secret-text p {
+  margin-bottom: 10px;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 18px;
+}
+
+/*Ellen*/
+.ellen {
+  background-color: dodgerblue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ellen-text {
+  text-align: center;
+  font-family: Work Sans, sans-serif;
+
+}
+
+.ellen-text h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+
+}
+
+.ellen-text p {
+  font-size: 50px;
+
+}
+
+/*JK*/ 
+.jk {
+  background-color: dodgerblue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jk-text {
+  text-align: center;
+  font-family: Work Sans, sans-serif;
+
+}
+
+.jk-text h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+
+}
+
+.jk-text p {
+  font-size: 50px;
+
+}
+
+/*perlin*/
+.grid {
+  display:flex;
+}
+
+.grid-bgiamge {
+  width:50%;
+  height:100vh;
+  background-color:lime;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.grid-bgiamge img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/*passport*/
+.passport {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkers-aqua {
+  width: 33.33vw;
+  height: 50vh;
+  background-color: aqua;
+}
+
+.checkers-deeppink {
+  width: 33.33vw;
+  height: 50vh;
+  background-color: deeppink;
+}
+
+.checkers-lime {
+  width: 33.33vw;
+  height: 50vh;
+  background-color: lime;
+}
+
+.checkers-red {
+  width: 33.33vw;
+  height: 50vh;
+  background-color: red;
+} 
+
+.checkers-white {
+  width: 33.33vw;
+  height: 50vh;
+  background-color: white;
+} 
+
+.checkers-blue {
+  width: 33.33vw;
+  height: 50vh;
+  background-color: blue;
+}
+
+.passport-type {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.passport-text {
+  font-size: 20vw;
+  color: magenta;
+  border: 30px solid magenta;
+  padding: 2vw;
+  border-radius: 5vw;
+  text-shadow: 0 0 40px white;
+}
+
+/*face recognition*/
+.face {
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+}
+
+.face-image {
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 23vh;
+}
+
+/*Justin Bieber*/
+.justin {
+  background-color: dodgerblue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.justin-text {
+  text-align: center;
+  font-family: Work Sans, sans-serif;
+
+}
+
+.justin-text h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+
+}
+
+.justin-text p {
+  font-size: 50px;
+
+}
+
+/*Rihanna*/
+.rihanna {
+  background-color: dodgerblue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rihanna-text {
+  text-align: center;
+  font-family: Work Sans, sans-serif;
+}
+
+.rihanna-text h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.rihanna-text p {
+  font-size: 50px;
+}
+
+/*YouTube*/
+.youtube-img {
+  height: 100%;
+  align-items: center;
+}
+
+.youtube-background {
+  width:100%;
+  height:100%;
+  color:black;
+  -webkit-animation: myanimation 10s infinite;
+}
+
+@keyframes myanimation {
+  0% {background-color: red;}
+  25%{background-color:yellow;}
+  50%{background-color:green;}
+  75%{background-color:brown;}
+  100% {background-color: red;}
+}
+
+/*censor*/
+.censor {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  display: text;
+  align-items: center;
+  justify-content: center;
+}
+
+.censor-text {
+  color: transparent;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.censor-text h1 {
+  text-align: center;
+  font-size: 100px;
+  margin-top: 250px;
+}
+
+/*Facebook*/
+.facebook img{
+  height: 100%;
+  width: 100%;
+  align-items: center;
+} 
+
+.facebook-background {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+/*Twitter*/
+.twitter img{
+  height: 50vh;
+  width: 50vw;
+  align-items: center;
+}
+
+.twitter-background {
+  width: 100%;
+  height: 100%;
+  color: black;
+} 
+
+/*cloud*/
+.gradient-radial {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient (cornflowerblue, lightskyblue);
+}
+
+.cloud-text h1{
+  text-align: center;
+  font-size: 100px;
+} 
+
+
+
+
+
+
+
+
 
 
 

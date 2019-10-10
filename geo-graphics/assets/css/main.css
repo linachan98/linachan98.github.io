@@ -112,6 +112,25 @@ a {
 	border-radius: 50%;
 }
 
+.cloud-pattern{
+
+  /*center it*/
+  margin-left: -25px;
+  margin-top: -25px;
+}
+
+.move-1{
+   animation: rombus 10s linear 0s infinite;
+}
+
+@keyframes rombus{
+   0%{left:50%;top:0}
+   25%{left:100%;top:50%}
+   50%{left:50%;top:100%}
+   75%{left:0;top:50%}
+   100%{left:50%;top:0}
+}
+
 /*Chip*/
 
 .chip-container {
