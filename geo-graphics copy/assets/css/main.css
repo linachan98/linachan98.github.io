@@ -508,33 +508,12 @@ a {
   font-size: 50px;
 }
 
-/*YouTube*/
-.youtube-img {
-  height: 100%;
-  align-items: center;
-}
-
-.youtube-background {
-  width:100%;
-  height:100%;
-  color:black;
-  -webkit-animation: myanimation 10s infinite;
-}
-
-@keyframes myanimation {
-  0% {background-color: red;}
-  25%{background-color:yellow;}
-  50%{background-color:green;}
-  75%{background-color:brown;}
-  100% {background-color: red;}
-}
-
 /*censor*/
 .censor {
   background-color: white;
   height: 100vh;
   width: 100vw;
-  display: text;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -547,49 +526,121 @@ a {
 .censor-text h1 {
   text-align: center;
   font-size: 100px;
-  margin-top: 250px;
 }
 
 /*Facebook*/
-.facebook img{
-  height: 100%;
-  width: 100%;
-  align-items: center;
-} 
-
-.facebook-background {
-  width: 100%;
-  height: 100%;
-  color: black;
+.facebook {
+  width:75%;
+  margin-left: 25%;
+  background-color: white;
+  font-size: 680px;
 }
 
-/*Twitter*/
-.twitter img{
-  height: 50vh;
+.facebook-content {
+  white-space: nowrap;
+  position: absolute;
+  top:0px;
+  text-transform: uppercase;
+  padding: 10px;
+  position: fixed;
+  background: blue;
+}
+
+.facebook-content {
+  -webkit-animation: urmove 10s linear infinite; /* Safari 4.0 - 8.0 */
+  white-space: nowrap;
+  animation: urmove 10s linear infinite alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes urmove {
+  from {
+    left: 0;
+  }
+  to {
+    left: -2310px;
+  }
+}
+
+/*Swirls*/
+.swirls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.arrow {
   width: 50vw;
-  align-items: center;
+  height: 50vh;
+  background-color: black;
+  font-size: 40vw;
+  line-height: 41vw;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-origin: center 50%;
+  text-align: center;
+  width: 50vw;
+  height: 40vw;
+  margin-top: 50px;
 }
 
-.twitter-background {
-  width: 100%;
-  height: 100%;
-  color: black;
+@keyframes spin {
+  from {
+    transform:rotate(360deg);
+  }
+
+  to {
+    transform:rotate(0deg);
+  }
 } 
+
+.swirls-type {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.swirls-text {
+  font-size: 20vw;
+  color: red;
+  border: 30px solid red;
+  padding: 2vw;
+  border-radius: 5vw;
+}
 
 /*cloud*/
-.gradient-radial {
-  color: #fff;
-  width: 100%;
-  height: 100vh;
-  background: radial-gradient (cornflowerblue, lightskyblue);
+.cloud-user {
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  font-family:arial;
 }
 
-.cloud-text h1{
-  text-align: center;
-  font-size: 100px;
-} 
+.cloud-avatar {
+  width:25vw;
+  height:25vw;
+  background-color:cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
 
-
+.cloud-letter {
+  color:white;
+  font-size:15vw;
+  font-family: 'Modak', cursive;
+}
 
 
 

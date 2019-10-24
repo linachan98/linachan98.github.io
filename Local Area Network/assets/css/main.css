@@ -1,0 +1,149 @@
+body {
+	font-family: courier;
+	font-size: 24px;
+	color:blue;
+	background: blue;
+}
+
+a {
+	color:red;
+}
+
+.rotate-text {
+  transform: rotate(-90deg);
+  transform-origin:bottom left;
+  font-family:arial;
+  font-size:22vh;
+  margin-left:22vh;
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  color:black;
+  font-family: 'Notable', sans-serif;
+  text-shadow: 4px 4px yellow;
+  padding: 15px 10px 10px 10px;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+  transform-origin:bottom left;
+  font-family:arial;
+  font-size:15.5vh;
+  margin-left:15.5vh;
+  position: fixed; 
+  bottom: 0; 
+  left: 150px; 
+  color:black;
+  font-family: 'Notable', sans-serif; 
+  text-shadow: 4px 4px yellow;
+  padding: 10px;
+}
+
+.sidebar {
+	position: fixed;
+	width:25%;
+	top:0px;
+	left:0px;
+	height:100vh;
+	font-size: 3vw;
+	text-transform: uppercase;
+}
+
+.sidebar-content {
+	padding: 10px;
+}
+
+.main {
+	width:75%;
+	margin-left: 25%;
+	background-color: white;
+}
+
+.main-content {
+  white-space: nowrap;
+  position: absolute;
+  top:0px;
+  text-transform: uppercase;
+  padding: 10px;
+  position: fixed;
+  background: yellow;
+}
+
+.main-content {
+  -webkit-animation: urmove 8s linear infinite; /* Safari 4.0 - 8.0 */
+  white-space: nowrap;
+  animation: urmove 8s linear infinite alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes urmove {
+  from {
+    right: 0;
+  }
+  to {
+    right: -140px;
+  }
+}
+
+.listing {
+	text-transform: uppercase;
+	font-size: 2vw;
+	margin-bottom: 20px;
+  padding: 10px;
+}
+
+.date {
+	color:red;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.title {
+	font-size: 3vw;
+	font-family: 'Fira Sans', sans-serif;
+	color: blue;
+}
+
+.location {
+	color: black;
+	font-family: 'Fira Sans', sans-serif;
+} 
+
+.nav {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin-top: 40px;
+  margin-left: 1145px;
+  font-size: 20px;
+}
+
+.nav-item {
+  background-color: palegreen;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  color:#000;
+  text-decoration: none;
+  cursor: pointer; 
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.large {
+  flex:0 0 66.666%;
+  transition: 1s;
+  cursor: zoom-out;
+}
+
+.active{
+  background-color: blue;
+}
+
