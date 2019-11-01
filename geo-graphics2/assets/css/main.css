@@ -1,13 +1,54 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
-	background-color: black;
+	background-color: white;
 	color: white;
 }
 
 a {
 	color:red;
 } 
+
+
+/*Index Homepage*/
+
+.index-intro {
+  font-size: 75px;
+  margin-bottom: 8vh;
+  padding: 10px;
+  font-family: 'UnifrakturCook', cursive;
+  font-weight: bold; 
+  color: black;
+  text-shadow: 2px 2px blue;
+}
+
+.index-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px; 
+  border-top: 2px solid blue;
+}
+
+.index-name {
+  flex: 0 0 50%;
+}
+
+.index-layer {
+  flex: 0 0 25%;
+  color: blue;
+}
+
+.index-tag {
+  flex: 0 0 25%;
+
+}
+
+.index-name a{
+  color: blue;
+  text-decoration: none;
+}
 
 /*password*/
 
