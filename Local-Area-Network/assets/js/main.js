@@ -11,7 +11,7 @@ $(document).ready(function(){
 	});
 
 	var hideAll = function(){
-		$('.research-item').addClass('hide');
+		$('.listing').addClass('hide');
 	}
 
 	$('.btn-September').click(function(){

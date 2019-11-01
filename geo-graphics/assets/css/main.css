@@ -1,7 +1,7 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
-	background-color: black;
+	background-color: lightyellow;
 	color: white;
 }
 
@@ -12,9 +12,13 @@ a {
 /*Index Homepage*/
 
 .index-intro {
-	font-size: 18px;
-	margin-bottom: 25vh;
+	font-size: 75px;
+	margin-bottom: 8vh;
 	padding: 10px;
+	font-family: 'UnifrakturCook', cursive;
+	font-weight: bold; 
+	color: black;
+	text-shadow: 2px 2px blue;
 }
 
 .index-row {
@@ -23,7 +27,7 @@ a {
 	padding: 10px;
 	margin-bottom: 5px;
 	margin-top: 5px; 
-	border-top: 2px solid white;
+	border-top: 2px solid blue;
 }
 
 .index-name {
@@ -32,11 +36,32 @@ a {
 
 .index-layer {
 	flex: 0 0 25%;
+	color: blue;
 }
 
 .index-tag {
 	flex: 0 0 25%;
 
+}
+
+.index-name a{
+	color: blue;
+	text-decoration: none;
+}
+
+.nav-item {
+	background-color: palegreen;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	color:#000;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1.3vw;
+}
+
+.active{
+	background-color: blue;
 }
 
 /*IP Address*/
@@ -54,7 +79,6 @@ a {
 	font-size: 30vh;
 	text-align: center;
 	color: lime;
-
 }
 
 /*Checkers*/
@@ -156,7 +180,6 @@ a {
 	border: solid gray;
 	font-size: 5vw;
 }
-
 
 
 

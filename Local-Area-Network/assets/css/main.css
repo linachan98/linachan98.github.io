@@ -103,6 +103,11 @@ a {
 	color: blue;
 }
 
+.title a {
+  color: blue;
+  text-decoration: none;
+}
+
 .location {
 	color: black;
 	font-family: 'Fira Sans', sans-serif;
@@ -115,7 +120,7 @@ a {
   top: 0px;
   left: 0px;
   margin-top: 40px;
-  margin-left: 1145px;
+  margin-left: 1100px;
   font-size: 20px;
 }
 
